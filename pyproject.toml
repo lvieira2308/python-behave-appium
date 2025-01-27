@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 appium-python-client = "^4.5.0"
+loguru = "^0.7.3"
 
 [tool.poetry.group.dev.dependencies]
 behave = {git = "https://github.com/behave/behave"}
