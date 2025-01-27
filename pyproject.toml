@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "firstproject"
+version = "0.1.0"
+description = ""
+authors = ["lvieira2308 <lvieira2308@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+appium-python-client = "^4.5.0"
+
+[tool.poetry.group.dev.dependencies]
+behave = {git = "https://github.com/behave/behave"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
