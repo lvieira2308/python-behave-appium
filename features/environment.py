@@ -7,14 +7,20 @@ def start_driver(context):
   ## APPIUM IMPLEMENTATION HERE
   platform = context.config.userdata.get("PLATFORM", "unknown").lower()
 
+  with open(f"features/setup/devices/{platform}/capabilities.yaml", "r") as file:
+    capabilities = yaml.safe_load(file)
+
   if platform == 'android':
     context.is_android = True
     log_info('Running on ANDROID')
+
     ## context.driver = ...
 
   else:
     context.is_ios = True
     log_info('Running on IOS')
+
+
     ## context.driver = ...
 
   # yield context.driver
