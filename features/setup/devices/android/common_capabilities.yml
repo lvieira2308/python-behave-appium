@@ -1,12 +1,12 @@
 capability:
-  platformName: "android"
-	automationName: "uiautomator2"
-  app: "myApp.apk"
-	packageName: "packageName"
-  autoGrantPermissions: true
-  isRealMobile: true
+ platformName: "android"
+ automationName: "uiautomator2"
+ app: "myApp.apk"
+ packageName: "packageName"
+ autoGrantPermissions: true
+ isRealMobile: true
 
 
 device_1:
-	deviceName: "Pixel 3"
-	platformVersion: "9"
+ deviceName: "Pixel 3"
+ platformVersion: "9"

@@ -1,13 +1,14 @@
 from appium import webdriver
 from behave import fixture, use_fixture
 from log import *
+import yaml
 
 @fixture
 def start_driver(context):
   ## APPIUM IMPLEMENTATION HERE
   platform = context.config.userdata.get("PLATFORM", "unknown").lower()
 
-  with open(f"features/setup/devices/{platform}/capabilities.yaml", "r") as file:
+  with open(f"features/setup/devices/{platform}/common_capabilities.yml", "r") as file:
     capabilities = yaml.safe_load(file)
 
   if platform == 'android':
