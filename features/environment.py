@@ -21,7 +21,6 @@ def start_driver(context):
     context.is_ios = True
     log_info('Running on IOS')
 
-
     ## context.driver = ...
 
   # yield context.driver
