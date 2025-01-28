@@ -1,4 +1,4 @@
-### Run commands
+# Run commands
 
 ## First - Enter in the shell mode
 poetry shell
