@@ -1,0 +1,7 @@
+platformName: iOS
+platformVersion: "18.2"
+deviceName: "iPhone 16 Pro Max"
+app: "/Users/luisvieira/Documents/myApp.app"
+automationName: "XCUITest"
+noReset: false
+udid: "A54A339A-2272-4095-B0E0-A8D4C405EAA7"

@@ -319,6 +319,23 @@ files = [
 ]
 
 [[package]]
+name = "pyhamcrest"
+version = "2.1.0"
+description = "Hamcrest framework for matcher objects"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "pyhamcrest-2.1.0-py3-none-any.whl", hash = "sha256:f6913d2f392e30e0375b3ecbd7aee79e5d1faa25d345c8f4ff597665dcac2587"},
+    {file = "pyhamcrest-2.1.0.tar.gz", hash = "sha256:c6acbec0923d0cb7e72c22af1926f3e7c97b8e8d69fc7498eabacaf7c975bd9c"},
+]
+
+[package.extras]
+dev = ["black", "doc2dash", "flake8", "pyhamcrest[docs,tests]", "pytest-mypy", "towncrier", "tox", "tox-asdf", "twine"]
+docs = ["alabaster (>=0.7,<1.0)", "sphinx (>=4.0,<5.0)"]
+tests = ["coverage[toml]", "dataclasses", "mypy (!=0.940)", "pytest (>=5.0)", "pytest-mypy-plugins", "pytest-sugar", "pytest-xdist", "pyyaml", "types-dataclasses", "types-mock"]
+tests-numpy = ["numpy", "pyhamcrest[tests]"]
+
+[[package]]
 name = "pysocks"
 version = "1.7.1"
 description = "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information."
@@ -609,4 +626,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "192a8bd17b6fe30062c43c359be43a78f67bb8e3df7b00aa384de13085c16804"
+content-hash = "4a82d3ebed7324c48769e9c2e07bf3984f0c108891e3ee47f810099017670798"

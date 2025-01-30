@@ -2,14 +2,12 @@
 
 run_tests_android:
 	pkill -f "appium" || true
-	appium -p 4725 --use-plugins=images,appium-reporter-plugin > appium.log 2>&1 &
-	sleep 5
-	behave -D PLATFORM=android
+	appium -p 4724 --use-plugins=images,appium-reporter-plugin > appium.log 2>&1 &
+	sleep 6
+	behave -D PLATFORM=ios
 	pkill -f "appium" || true
 
 run_tests_ios:
-	pkill -f "appium" || true
-	appium -p 4724 --use-plugins=images,appium-reporter-plugin > appium.log 2>&1 &
-	sleep 5
+	pkill -f 4724 || true
 	behave -D PLATFORM=ios
-	pkill -f "appium" || true
+	pkill -f 4724 || true

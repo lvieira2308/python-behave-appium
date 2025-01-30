@@ -1,3 +1,17 @@
+# Setup
+
+brew install carthage
+
+
+brew install libimobiledevice
+idevice_id -l           # - Lists your iOS device connected via USB
+ideviceinfo             # - Lists all relevant info from your device
+ideviceinfo | grep DeviceName
+
+
+brew install ideviceinstaller
+ideviceinstaller - l          # - Lists all apps (bundle ids) installed on your device
+
 # Run commands
 
 ## First - Enter in the shell mode

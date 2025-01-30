@@ -11,6 +11,7 @@ appium-python-client = "^4.5.0"
 loguru = "^0.7.3"
 pyyaml = "^6.0.2"
 paver = "^1.3.4"
+pyhamcrest = "^2.1.0"
 
 [tool.poetry.group.dev.dependencies]
 behave = {git = "https://github.com/behave/behave"}
